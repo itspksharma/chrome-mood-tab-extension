@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Mood Tab by Pawan",
+    "version": "1.0",
+    "description": "Custom Chrome New Tab with mood-based videos, quotes, weather and search bar.",
+    "author": "Pawan Kumar",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "permissions": ["storage", "geolocation"],
+    "host_permissions": [
+      "https://api.openweathermap.org/"
+    ],
+    "action": {
+      "default_title": "Mood Tab"
+    },
+    "icons": {
+      "128": "assets/icons/icon128.png"
+    }
+  }  

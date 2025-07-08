@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo" controls>
+    <source src="assets/videos/moody/moody1.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay Content -->
+  <div class="overlay" id="overlay">
+    <div class="top-bar">
+      <div class="clock" id="clock">--:--:--</div>
+      <div class="weather" id="weather">--℃ 🌤️</div>
+      <div class="date" id="date">--, -- -- ----</div>
+    </div>
+
+    <!-- Search Box -->
+    <form id="searchForm" action="https://www.google.com/search" method="get" class="search-box" target="_blank">
+      <input id="searchInput" type="text" name="q" placeholder="Search Google..." autocomplete="off" />
+      <button type="submit">🔍</button>
+    </form>
+    <ul class="history" id="history"></ul>
+
+    <!-- Mood Selector -->
+    <div class="mood-selector">
+      <div class="mood-title">Select Your Mood</div>
+      <div class="mood-options">
+        <button class="mood-btn" data-mood="sad">😢</button>
+        <button class="mood-btn" data-mood="moody">😎</button>
+        <button class="mood-btn" data-mood="love">❤️</button>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote" id="quote">Stay motivated.</div>
+
+    <!-- Watermark -->
+    <div class="watermark">Made by Pawan 🛠️</div>
+  </div>
+
+  <!-- Hidden canvas for brightness detection -->
+  <canvas id="colorCanvas" style="display: none;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
