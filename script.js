@@ -114,8 +114,8 @@ navigator.geolocation?.getCurrentPosition(
     const lat = pos.coords.latitude;
     const lon = pos.coords.longitude;
 
-    const weatherKey = "cb3d6b3de76cd1176efbf4524a1e38ca";
-    const geoKey = "b74b9342e3ee4dcc894227ddd37724ca";
+    const weatherKey = WEATHER_API_KEY;
+    const geoKey = GEO_API_KEY;
 
     // Weather Fetch
     const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${weatherKey}`;
