@@ -1,92 +1,77 @@
-# 🌈 Chrome Mood Tab Extension - by Pawan Sharma
+# 🌈 Chrome Mood Tab Extension
 
-Bring your emotions to life every time you open a new tab!  
-This Chrome extension shows **live video backgrounds**, **mood-based quotes**, **Google search**, **clock**, **date**, and **weather**, all in a clean and stylish layout.
-
----
-
-## 🚀 Features
-
-- 🎭 **Mood Selector** – Choose from Sad, Moody, or Love moods
-- 📽️ **Live Background Videos** – Each mood has rotating `.webm` videos
-- 🧠 **Motivational Quotes** – Auto-change based on selected mood
-- 🌤️ **Live Weather** – Auto-detected weather with location
-- 🕒 **Clock + Date** – Stylish left-side clock with full date
-- 🔍 **Google Search Bar** – With search history and clear buttons
-- 🖋️ **"Made by Pawan" Watermark** – Subtle but proud 😎
+A clean, animated and motivational Chrome new tab extension that plays background videos based on your selected mood: **Sad**, **Moody**, or **Love**.  
+It also shows a live **clock**, **date**, **weather**, **motivational quotes**, and includes a Google search bar with history.
 
 ---
 
-## 🧩 How to Install (Manual - 100% Free)
+## 📸 Features
 
-> **Note:** This extension is not on Chrome Web Store, but you can easily install it manually using Developer Mode in Chrome.
-
-### 🔧 Steps:
-
-1. **Download ZIP file:**
-   👉 [Click here to Download from Google Drive](https://drive.google.com/file/d/1Fdmxw1LNa6Xn2qcQYwYBrkxFJJMh-eFn/view?usp=drive_link)
-
-2. **Extract** the ZIP file to a folder
-
-3. Open Chrome and go to:
-
-4. Enable **Developer Mode** (top-right switch)
-
-5. Click on **"Load Unpacked"**
-
-6. Select the folder you extracted
-
-7. ✅ You're done! Now open a new tab and enjoy your dynamic mood-based theme 🎉
+- 🎬 Mood-based background videos (`Sad`, `Moody`, `Love`)
+- 🕓 Live Clock & Full Date
+- 🌦️ Weather Info with Auto Location (via OpenWeatherMap)
+- 🔍 Google Search Bar with history + clear option
+- 💬 Motivational Quotes (Mood-based)
+- 🧠 Dynamic text color detection based on background
+- 📍City Name with Weather
+- 💻 Mobile-optimized UI (experimental)
 
 ---
 
-## 💡 Suggestions?
+## ⚙️ How to Use (Manually Install in Chrome)
 
-Want to add your own moods, videos, or quotes?  
-Fork the project or message me at [GitHub - itspksharma](https://github.com/itspksharma)  
-Pull requests & ideas welcome!
+1. **Download the ZIP** or clone this repo:
+   ```bash 
+   git clone https://github.com/itspksharma/chrome-mood-tab-extension.git
 
----
+2. Go to chrome://extensions/ in Chrome.
 
-## 📁 Project Structure
+3. Enable Developer Mode (top-right switch)
 
+4. Click on Load Unpacked
 
-4. Enable **Developer Mode** (top-right switch)
+5. Select the chrome-mood-tab-extension/ folder (unzipped)
 
-5. Click on **"Load Unpacked"**
+✅ Now open a new tab and enjoy your Mood-Based Extension!
 
-6. Select the folder you extracted
+🔑 Setup Your API Keys
+To enable live weather and city name, you must provide your own API keys:
 
-7. ✅ You're done! Now open a new tab and enjoy your dynamic mood-based theme 🎉
+1. Copy config-sample.js and rename it to config.js
 
----
+2. Edit config.js like this:
 
-## 💡 Suggestions?
+// config.js
+const WEATHER_API_KEY = "your_openweathermap_key_here";
+const GEO_API_KEY = "your_opencage_key_here";
 
-Want to add your own moods, videos, or quotes?  
-Fork the project or message me at [GitHub - itspksharma](https://github.com/itspksharma)  
-Pull requests & ideas welcome!
+3. Don't share your keys publicly. This file is ignored in .gitignore.
 
----
+🔐 Secure Setup
+This project uses a config.js file for sensitive keys which is:
 
-## 📁 Project Structure
+🔒 Ignored in Git (.gitignore)
 
-live-video-theme/
-│
-├── index.html
-├── styles.css
-├── script.js
-├── manifest.json
-├── assets/
-│ ├── icons/
-│ │ └── icon128.png
-│ └── videos/
-│ ├── sad/
-│ ├── moody/
-│ └── love/
----
+⚠️ Not pushed to GitHub or shared in public ZIPs
 
-## 📌 License
+✅ Required only for weather/location functionality
 
-This project is open-source and free to use for personal or portfolio use.  
-Made with ❤️ by **Pawan Sharma**
+🧰 Tech Stack
+HTML5, CSS3, JavaScript (Vanilla)
+
+TailwindCSS for basic animations
+
+OpenWeatherMap API
+
+OpenCage Geo API
+
+🙏 Credits
+Videos used are free from Pexels, Coverr or generated
+
+Icons & Emojis from Google Fonts/Unicode
+
+Quotes curated manually for each mood
+
+🚀 Author
+Made by Pawan Kumar Sharma
+GitHub
